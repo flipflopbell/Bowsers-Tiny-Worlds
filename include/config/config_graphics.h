@@ -34,10 +34,10 @@
 // #define DISABLE_AA
 
 // Makes the coins ia8 64x64 instead of ia16 32x32. Uses new ia8 textures so that vanilla coins look better.
-#define IA8_COINS
+//#define IA8_COINS
 
 // Similar to the above, but 30 FPS (Textures by InTheBeef, cleaned up by Arceveti).
-#define IA8_30FPS_COINS
+//#define IA8_30FPS_COINS
 
 // Use .rej microcode for certain objects (experimental - only should be used when F3DEX_GBI_2 is defined).
 // For advanced users only. Does not work perfectly out the box, best used when exported actor models are
@@ -52,13 +52,13 @@
  * Also, this also disables anti-aliasing on Mario.
  * NOTE: Regarding performance, silhouette seems to lose 1-2 frames on console.
  */
-// #define SILHOUETTE 127
+#define SILHOUETTE 127
 
 // Use 64x64 quarter shadow textures (Vanilla are 16x16).
-#define HD_SHADOWS
+//#define HD_SHADOWS
 
 // Makes certain objects (mainly trees) transparent when the camera gets close.
-// #define OBJ_OPACITY_BY_CAM_DIST
+#define OBJ_OPACITY_BY_CAM_DIST
 
 // Fixes the game reading the ia8 burn smoke texture as an rgba16.
 #define BURN_SMOKE_FIX

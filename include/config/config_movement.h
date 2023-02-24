@@ -5,7 +5,7 @@
  *********************/
 
 // Changes Mario's ground turn radius by making it dependent on the analog stick magnitude and speed.
-// #define VELOCITY_BASED_TURN_SPEED
+#define VELOCITY_BASED_TURN_SPEED
 
 // Allows Mario to easily side flip when moving forwards at any speed.
 // #define SIDE_FLIP_AT_LOW_SPEEDS
@@ -27,7 +27,7 @@
 // #define NO_SLEEP
 
 // Disables fall damage.
-#define NO_FALL_DAMAGE
+//#define NO_FALL_DAMAGE
 
 // Disables the scream that mario makes when falling off a great height (this is separate from actual fall damage).
 // #define NO_FALL_DAMAGE_SOUND
@@ -45,7 +45,7 @@
 // #define HANDS_FREE_HOLDING_FIX
 
 // Prevents Mario from losing his cap.
-// #define PREVENT_CAP_LOSS
+#define PREVENT_CAP_LOSS
 
 // Enables Platform Displacement 2, also known as momentum patch. Makes Mario keep the momemtum from moving platforms.
 #define PLATFORM_DISPLACEMENT_2
@@ -69,7 +69,7 @@
 #define HANGING_FIX
 
 // The maximum angle the player can wall kick, in degrees. 0..90. To allow 45 degree wall kicks, you must supply `46` to allow 45 and under.
-#define WALL_KICK_DEGREES 45
+#define WALL_KICK_DEGREES 46
 
 // Makes Mario unable to ledge grab steep slopes to prevent false ledge grabs.
 #define DONT_LEDGE_GRAB_STEEP_SLOPES

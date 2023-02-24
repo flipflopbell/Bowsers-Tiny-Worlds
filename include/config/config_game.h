@@ -9,7 +9,7 @@
  * You may also need to change sLevelsWithRooms in object_helpers.c.
  * TODO: separate this into separate defines, behavior params, or make these mechanics otherwise dynamic.
 */
-// #define ENABLE_VANILLA_LEVEL_SPECIFIC_CHECKS
+#define ENABLE_VANILLA_LEVEL_SPECIFIC_CHECKS
 
 // Disables lives and hides the lives counter.
 #define DISABLE_LIVES
@@ -30,7 +30,7 @@
 // #define BREATH_METER
 
 // Number of coins to spawn the "100 coin" star. If you remove the define altogether, then there won't be a 100 coin star at all.
-#define X_COIN_STAR 100
+//#define X_COIN_STAR 100
 
 // Stars don't kick you out of the level (does not play nicely with vanilla).
 // #define NON_STOP_STARS
@@ -70,4 +70,4 @@
 
 // The level that the game starts with immediately after file select.
 // The levelscript needs to have a MARIO_POS command for this to work.
-#define START_LEVEL LEVEL_CASTLE_GROUNDS
+#define START_LEVEL LEVEL_CASTLE_COURTYARD

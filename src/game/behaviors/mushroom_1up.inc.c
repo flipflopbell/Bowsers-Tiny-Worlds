@@ -66,6 +66,7 @@ void pole_1up_move_towards_mario(void) {
     o->oForwardVel = coss(o->oMoveAnglePitch) * 30.0f;
 
     bhv_1up_interact();
+    gMarioState->healCounter   = 0;
 }
 
 void one_up_move_away_from_mario(s16 collisionFlags) {
@@ -300,11 +301,9 @@ void bhv_1up_hidden_in_pole_loop(void) {
 
         case MUSHROOM_ACT_MOVING:
             pole_1up_move_towards_mario();
-            object_step();
             break;
 
         case MUSHROOM_ACT_LOOP_IN_AIR:
-            object_step();
             if (o->oTimer > 17) {
                 spawn_object(o, MODEL_NONE, bhvSparkleSpawn);
             }
