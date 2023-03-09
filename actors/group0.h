@@ -333,4 +333,10 @@ extern const Gfx white_particle_small_unused_dl[];
 
 #include "luigi/geo_header.h"
 
+// donut_block
+extern const GeoLayout rr_geo_000920[];
+extern const Gfx rr_seg7_dl_0701B848[];
+extern const Gfx rr_seg7_dl_0701B980[];
+extern const Collision rr_seg7_collision_donut_platform[];
+
 #endif

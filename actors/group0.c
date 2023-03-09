@@ -28,6 +28,10 @@
 
 #include "luigi/model.inc.c"
 
+#include "donut_block/1.inc.c"
+#include "donut_block/2.inc.c"
+#include "donut_block/collision.inc.c"
+
 #ifdef S2DEX_TEXT_ENGINE
 #include "src/s2d_engine/config.h"
 #include FONT_C_FILE

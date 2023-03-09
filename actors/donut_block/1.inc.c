@@ -1,3 +1,7 @@
+ALIGNED8 static const Texture sky_09000800[] = {
+#include "actors/donut_block/rr_textures.00800.rgba16.inc.c"
+};
+
 // 0x0701B530 - 0x0701B630
 static const Vtx rr_seg7_vertex_0701B530[] = {
     {{{   102,     51,   -306}, 0, {   224,   1244}, {0x72, 0x5d, 0x29, 0xff}}},

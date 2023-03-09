@@ -93,7 +93,6 @@ extern const Collision rr_seg7_collision_070295F8[];
 extern const Collision rr_seg7_collision_0702967C[];
 extern const Collision rr_seg7_collision_elevator_platform[];
 extern const Collision rr_seg7_collision_07029750[];
-extern const Collision rr_seg7_collision_donut_platform[];
 extern const Collision rr_seg7_collision_07029858[];
 extern const Collision rr_seg7_collision_07029924[];
 extern const Collision rr_seg7_collision_07029C1C[];

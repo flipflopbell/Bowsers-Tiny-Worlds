@@ -1,3 +1,7 @@
+ALIGNED8 static const Texture texture_metal_hole[] = {
+#include "actors/donut_block/metal_hole.rgba16.inc.c"
+};
+
 // 0x0701B8B8 - 0x0701B938
 static const Vtx rr_seg7_vertex_0701B8B8[] = {
     {{{    61,    143,    317}, 0, {   990,      0}, {0xc7, 0xa2, 0x68, 0xff}}},
