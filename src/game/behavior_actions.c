@@ -46,6 +46,8 @@
 #include "rumble_init.h"
 #include "puppylights.h"
 
+#include "behaviors/!skybox.inc.c"
+
 #include "behaviors/star_door.inc.c"
 #include "behaviors/mr_i.inc.c"
 #include "behaviors/pole.inc.c"

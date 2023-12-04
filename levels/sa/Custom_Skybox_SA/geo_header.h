@@ -1,0 +1,18 @@
+extern const GeoLayout EDSkyboxSA_geo[];
+extern u8 Custom_Skybox_SA__0_rgba16[];
+extern u8 Custom_Skybox_SA__1_rgba16[];
+extern u8 Custom_Skybox_SA__2_rgba16[];
+extern Vtx Custom_Skybox_SA_Bone_mesh_layer_0_vtx_0[12];
+extern Gfx Custom_Skybox_SA_Bone_mesh_layer_0_tri_0[];
+extern Vtx Custom_Skybox_SA_Bone_mesh_layer_0_vtx_1[230];
+extern Gfx Custom_Skybox_SA_Bone_mesh_layer_0_tri_1[];
+extern Vtx Custom_Skybox_SA_Bone_mesh_layer_0_vtx_2[208];
+extern Gfx Custom_Skybox_SA_Bone_mesh_layer_0_tri_2[];
+extern Gfx mat_Custom_Skybox_SA_Material_0_f3d[];
+extern Gfx mat_revert_Custom_Skybox_SA_Material_0_f3d[];
+extern Gfx mat_Custom_Skybox_SA_Material_1_f3d[];
+extern Gfx mat_revert_Custom_Skybox_SA_Material_1_f3d[];
+extern Gfx mat_Custom_Skybox_SA_Material_2_f3d[];
+extern Gfx mat_revert_Custom_Skybox_SA_Material_2_f3d[];
+extern Gfx Custom_Skybox_SA_Bone_mesh_layer_0[];
+extern Gfx Custom_Skybox_SA_material_revert_render_settings[];

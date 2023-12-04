@@ -1,0 +1,16 @@
+extern const GeoLayout sa_area_1_geo[];
+extern const GeoLayout sa_area_1[];
+extern const Collision sa_area_1_collision[];
+extern const MacroObject sa_area_1_macro_objs[];
+extern u8 sa_dl_water_rgba16[];
+extern u8 sa_dl_tempImgEd001A_i8[];
+extern Vtx sa_dl__Fish_Visual_mesh_layer_1_vtx_0[157];
+extern Gfx sa_dl__Fish_Visual_mesh_layer_1_tri_0[];
+extern Vtx sa_dl__Fish_Visual_mesh_layer_1_vtx_1[108];
+extern Gfx sa_dl__Fish_Visual_mesh_layer_1_tri_1[];
+extern Gfx mat_sa_dl_water[];
+extern Gfx mat_revert_sa_dl_water[];
+extern Gfx mat_sa_dl_sand[];
+extern Gfx mat_revert_sa_dl_sand[];
+extern Gfx sa_dl__Fish_Visual_mesh_layer_1[];
+extern Gfx sa_dl_material_revert_render_settings[];

@@ -7,7 +7,7 @@
 /**
  * Changes Mario's ground turn radius by making it dependent on the analog stick magnitude and speed.
  */
-// #define VELOCITY_BASED_TURN_SPEED
+#define VELOCITY_BASED_TURN_SPEED
 
 /**
  * Allows Mario to easily side flip when moving forwards at any speed.
@@ -71,7 +71,7 @@
 /**
  * Prevents Mario from losing his cap.
  */
-// #define PREVENT_CAP_LOSS
+#define PREVENT_CAP_LOSS
 
 /**
  * Uses Shindou's pole behavior.

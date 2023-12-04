@@ -111,6 +111,8 @@
 #define MODEL_BOB_CHAIN_CHOMP_GATE             0x36        // bob_geo_000440
 #define MODEL_BOB_SEESAW_PLATFORM              0x37        // bob_geo_000458
 #define MODEL_BOB_BARS_GRILLS                  0x38        // bob_geo_000470
+#define MODEL_NIGHT_SKYBOX                     0x39
+#define MODEL_RED_NIGHT_SKYBOX                 0x3A
 
 // sl
 #define MODEL_SL_SNOW_TRIANGLE                 0x36        // sl_geo_000390
@@ -210,6 +212,7 @@
 #define MODEL_BITFS_TUMBLING_PLATFORM             0x41        // bitfs_geo_0006F0
 
 // sa
+#define MODEL_SA_SKYBOX                           0x36
 
 // bits
 #define MODEL_BITS_SLIDING_PLATFORM               0x36        // bits_geo_0005E0

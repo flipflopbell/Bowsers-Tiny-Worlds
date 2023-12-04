@@ -15,4 +15,9 @@ extern const MacroObject sa_seg7_macro_objs[];
 // script
 extern const LevelScript level_sa_entry[];
 
+#include "levels/sa/Custom_Skybox_SA/geo_header.h"
+
+
+#include "levels/sa/header.inc.h"
+
 #endif
