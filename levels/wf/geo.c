@@ -41,3 +41,8 @@
 #include "levels/wf/kickable_board/geo.inc.c"
 #include "levels/wf/tower_door/geo.inc.c"
 #include "levels/wf/areas/1/geo.inc.c"
+
+#include "levels/wf/geo.inc.c"
+
+#include "levels/wf/Custom_Skybox_Blue_Night/geo.inc.c"
+#include "levels/wf/Custom_Skybox_Crimson/geo.inc.c"

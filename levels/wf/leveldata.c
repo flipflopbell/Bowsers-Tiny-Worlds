@@ -67,3 +67,8 @@
 #include "levels/wf/areas/1/collision.inc.c"
 #include "levels/wf/areas/1/macro.inc.c"
 #include "levels/wf/areas/1/movtext.inc.c"
+
+#include "levels/wf/leveldata.inc.c"
+
+#include "levels/wf/Custom_Skybox_Blue_Night/model.inc.c"
+#include "levels/wf/Custom_Skybox_Crimson/model.inc.c"

@@ -123,7 +123,13 @@
             "1B"
         ]
     },
+    "24_moongrains": [
+        "moongrains"
+    ],
     "23_pizzascare": [
         "pizzascare"
+    ],
+    "25_pumpkin_moon": [
+        "pumpkin_moon"
     ]
 }
