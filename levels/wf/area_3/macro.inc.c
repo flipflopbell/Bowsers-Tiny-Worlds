@@ -1,4 +1,12 @@
 const MacroObject wf_area_3_macro_objs[] = {
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, -200, 100, -1600, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, -900, 0, 1000, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, 1450, 100, -1050, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, 1350, 700, 850, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, -200, 200, -700, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, -2030, 0, -180, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, -800, 0, -880, 0x00000000),
+	MACRO_OBJECT_WITH_BEH_PARAM(macro_red_coin, 0, 900, 700, 1800, 0x00000000),
 	MACRO_OBJECT_END(),
 };
 

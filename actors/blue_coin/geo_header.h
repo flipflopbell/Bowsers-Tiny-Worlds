@@ -1,0 +1,10 @@
+extern const GeoLayout blue_coin_geo[];
+extern const GeoLayout blue_coin_no_shadow_geo[];
+extern Lights1 blue_coin_Coin_Purple_lights;
+extern u8 blue_coin_purplecoin_rgba16[];
+extern Vtx blue_coin_000_displaylist_mesh_layer_4_vtx_0[4];
+extern Gfx blue_coin_000_displaylist_mesh_layer_4_tri_0[];
+extern Gfx mat_blue_coin_Coin_Purple[];
+extern Gfx mat_revert_blue_coin_Coin_Purple[];
+extern Gfx blue_coin_000_displaylist_mesh_layer_4[];
+extern Gfx blue_coin_material_revert_render_settings[];

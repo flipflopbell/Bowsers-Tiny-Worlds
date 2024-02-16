@@ -48,14 +48,14 @@ void scroll_gfx_mat_bob_dl_lava_2() {
 
 };
 
-void scroll_gfx_mat_bob_dl_fancy_cloud() {
-	Gfx *mat = segmented_to_virtual(mat_bob_dl_fancy_cloud);
+void scroll_gfx_mat_bob_dl_fancy_cloud_layer1() {
+	Gfx *mat = segmented_to_virtual(mat_bob_dl_fancy_cloud_layer1);
 
 
-	shift_s(mat, 9, PACK_TILESIZE(0, 1));
-	shift_t_down(mat, 9, PACK_TILESIZE(0, 1));
-	shift_s(mat, 11, PACK_TILESIZE(0, 1));
-	shift_t(mat, 11, PACK_TILESIZE(0, 1));
+	shift_s(mat, 10, PACK_TILESIZE(0, 1));
+	shift_t_down(mat, 10, PACK_TILESIZE(0, 1));
+	shift_s(mat, 12, PACK_TILESIZE(0, 1));
+	shift_t(mat, 12, PACK_TILESIZE(0, 1));
 
 };
 
@@ -63,5 +63,5 @@ void scroll_bob() {
 	scroll_bob_dl__Skull_Visual_mesh_layer_5_vtx_1();
 	scroll_gfx_mat_bob_dl_water_2();
 	scroll_gfx_mat_bob_dl_lava_2();
-	scroll_gfx_mat_bob_dl_fancy_cloud();
+	scroll_gfx_mat_bob_dl_fancy_cloud_layer1();
 };

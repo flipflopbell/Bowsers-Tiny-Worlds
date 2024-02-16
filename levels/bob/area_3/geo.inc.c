@@ -4,7 +4,6 @@ const GeoLayout bob_area_3_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, bob_dl__Skull_mesh_layer_1),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, bob_dl__Skull_mesh_layer_5),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, bob_dl__Skull_Visual_mesh_layer_1),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT_DECAL, bob_dl__Skull_Visual_mesh_layer_6),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, bob_dl__Skull_Visual_mesh_layer_5),
@@ -27,9 +26,6 @@ const GeoLayout bob_area_3[] = {
 				GEO_CLOSE_NODE(),
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, bob_dl_material_revert_render_settings),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, bob_dl_material_revert_render_settings),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT_DECAL, bob_dl_material_revert_render_settings),
 	GEO_CLOSE_NODE(),
 	GEO_END(),
 };

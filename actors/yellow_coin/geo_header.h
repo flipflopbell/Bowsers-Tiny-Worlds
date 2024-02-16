@@ -1,0 +1,10 @@
+extern const GeoLayout yellow_coin_geo[];
+extern const GeoLayout yellow_coin_no_shadow_geo[];
+extern Lights1 yellow_coin_Coin_Yellow_lights;
+extern u8 yellow_coin_coin_rgba16[];
+extern Vtx yellow_coin_000_displaylist_mesh_layer_4_vtx_0[4];
+extern Gfx yellow_coin_000_displaylist_mesh_layer_4_tri_0[];
+extern Gfx mat_yellow_coin_Coin_Yellow[];
+extern Gfx mat_revert_yellow_coin_Coin_Yellow[];
+extern Gfx yellow_coin_000_displaylist_mesh_layer_4[];
+extern Gfx yellow_coin_material_revert_render_settings[];

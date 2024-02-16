@@ -409,10 +409,19 @@ void render_debug_mode(void) {
 /**
  * Renders the amount of coins collected.
  */
-void render_hud_coins(void) {
+/*void render_hud_coins(void) {
     print_text(HUD_COINS_X, HUD_TOP_Y, "$"); // 'Coin' glyph
     print_text((HUD_COINS_X + 16), HUD_TOP_Y, "*"); // 'X' glyph
     print_text_fmt_int((HUD_COINS_X + 30), HUD_TOP_Y, "%d", gHudDisplay.coins);
+}
+
+/**
+ * Renders the amount of red coins collected.
+ */
+void render_hud_red_coins(void) {
+    print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_RED_COINS_X), HUD_TOP_Y - 24, "@"); // 'Coin' glyph
+    print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_RED_COINS_X - 16), HUD_TOP_Y - 24, "*"); // 'X' glyph
+    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(HUD_RED_COINS_X - 30), HUD_TOP_Y - 24, "%d", gRedCoinsCollected);
 }
 
 /**
@@ -562,8 +571,12 @@ void render_hud(void) {
         }
 #endif
 
-        if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
+/*        if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
             render_hud_coins();
+        }
+*/        
+        if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
+            render_hud_red_coins();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {

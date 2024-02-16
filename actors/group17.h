@@ -102,4 +102,11 @@ extern const Gfx swoop_seg6_dl_06006CC8[];
 extern const Gfx swoop_seg6_dl_06006D00[];
 extern const struct Animation *const swoop_seg6_anims_060070D0[];
 
+// boo
+extern const GeoLayout boo_geo[];
+extern const Gfx boo_seg5_dl_0500BEE0[];
+extern const Gfx boo_seg5_dl_0500BF48[];
+extern const Gfx boo_seg5_dl_0500BFA0[];
+extern const Gfx boo_seg5_dl_0500C1B0[];
+
 #endif

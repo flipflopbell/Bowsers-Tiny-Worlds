@@ -4,8 +4,7 @@ const GeoLayout bob_area_5_geo[] = {
 	GEO_NODE_START(),
 	GEO_OPEN_NODE(),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, bob_dl__Pizza_mesh_layer_1),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, bob_dl__Pizza_mesh_layer_5),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 0, -4000, 0, bob_dl__Pizza_Visual_mesh_layer_1),
+		GEO_DISPLAY_LIST(LAYER_OPAQUE, bob_dl__Pizza_Visual_mesh_layer_1),
 	GEO_CLOSE_NODE(),
 	GEO_RETURN(),
 };
@@ -24,8 +23,6 @@ const GeoLayout bob_area_5[] = {
 				GEO_CLOSE_NODE(),
 			GEO_CLOSE_NODE(),
 		GEO_CLOSE_NODE(),
-		GEO_DISPLAY_LIST(LAYER_OPAQUE, bob_dl_material_revert_render_settings),
-		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, bob_dl_material_revert_render_settings),
 	GEO_CLOSE_NODE(),
 	GEO_END(),
 };

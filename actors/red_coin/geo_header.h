@@ -1,0 +1,10 @@
+extern const GeoLayout red_coin_geo[];
+extern const GeoLayout red_coin_no_shadow_geo[];
+extern Lights1 red_coin_Coin_Red_lights;
+extern u8 red_coin_redcoin_rgba16[];
+extern Vtx red_coin_000_displaylist_mesh_layer_4_vtx_0[4];
+extern Gfx red_coin_000_displaylist_mesh_layer_4_tri_0[];
+extern Gfx mat_red_coin_Coin_Red[];
+extern Gfx mat_revert_red_coin_Coin_Red[];
+extern Gfx red_coin_000_displaylist_mesh_layer_4[];
+extern Gfx red_coin_material_revert_render_settings[];

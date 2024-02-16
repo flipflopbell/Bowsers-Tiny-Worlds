@@ -48,6 +48,8 @@ enum SeqId {
     SEQ_PIZZASCARE,  // 0x23
     SEQ_MOONGRAINS,  // 0x24
     SEQ_PUMPKIN_MOON,  // 0x25
+    SEQ_GHOSTLY_GALAXY,  // 0x26
+    SEQ_SPIDER_DANCE,  // 0x27
     SEQ_COUNT,
 };
 

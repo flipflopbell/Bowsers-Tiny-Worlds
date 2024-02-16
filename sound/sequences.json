@@ -13,9 +13,6 @@
         "09",
         "0A_mario_peach"
     ],
-    "01_cutscene_collect_star": [
-        "22"
-    ],
     "02_menu_title_screen": [
         "11"
     ],
@@ -131,5 +128,14 @@
     ],
     "25_pumpkin_moon": [
         "pumpkin_moon"
+    ],
+    "26_ghostly_galaxy": [
+        "ghostly_galaxy"
+    ],
+    "27_spider_dance": [
+        "spider_dance"
+    ],
+    "01_cutscene_collect_star": [
+        "course_clear_short"
     ]
 }

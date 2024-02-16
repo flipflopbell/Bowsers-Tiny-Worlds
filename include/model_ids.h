@@ -140,6 +140,7 @@
 #define MODEL_JRB_FALLING_PILLAR                  0x3D        // jrb_geo_000900
 #define MODEL_JRB_FALLING_PILLAR_BASE             0x3E        // jrb_geo_000918
 #define MODEL_JRB_FLOATING_PLATFORM               0x3F        // jrb_geo_000948
+#define MODEL_SNOW_SKYBOX                         0x40
 
 // thi
 #define MODEL_THI_HUGE_ISLAND_TOP                 0x36        // thi_geo_0005B0
@@ -368,13 +369,13 @@
 #define MODEL_CAP_SWITCH_BASE             0x56        // cap_switch_base_seg5_dl_05003120
 
 // group 9
-#define MODEL_BOO                         0x54        // boo_geo
-#define MODEL_BETA_BOO_KEY                0x55        // small_key_geo
-#define MODEL_HAUNTED_CHAIR               0x56        // haunted_chair_geo
-#define MODEL_MAD_PIANO                   0x57        // mad_piano_geo
-#define MODEL_BOOKEND_PART                0x58        // bookend_part_geo
-#define MODEL_BOOKEND                     0x59        // bookend_geo
-#define MODEL_HAUNTED_CAGE                0x5A        // haunted_cage_geo
+//#define MODEL_BOO                         0x54        // boo_geo
+#define MODEL_BETA_BOO_KEY                0x54        // small_key_geo
+#define MODEL_HAUNTED_CHAIR               0x55        // haunted_chair_geo
+#define MODEL_MAD_PIANO                   0x56        // mad_piano_geo
+#define MODEL_BOOKEND_PART                0x57        // bookend_part_geo
+#define MODEL_BOOKEND                     0x58        // bookend_geo
+#define MODEL_HAUNTED_CAGE                0x59        // haunted_cage_geo
 
 // group 10
 #define MODEL_BIRDS                       0x54        // birds_geo
@@ -435,6 +436,7 @@
 #define MODEL_MR_I_BODY                   0x67        // mr_i_geo
 #define MODEL_MR_I MODEL_MR_I_BODY // backwards compatibility
 #define MODEL_DORRIE                      0x68        // dorrie_geo
+#define MODEL_BOO                         0x69        // boo_geo
 
 // other models
 #define MODEL_YELLOW_COIN                 0x74        // yellow_coin_geo

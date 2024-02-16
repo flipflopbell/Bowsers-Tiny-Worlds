@@ -1486,7 +1486,7 @@ void print_animated_red_coin(s16 x, s16 y) {
     gDPSetRenderMode(gDisplayListHead++, G_RM_TEX_EDGE, G_RM_TEX_EDGE2);
 
 #ifdef IA8_30FPS_COINS
-    switch (globalTimer & 0x7) {
+    switch (globalTimer) {
         case 0: gSPDisplayList(gDisplayListHead++, coin_seg3_dl_red_0     ); break;
         case 1: gSPDisplayList(gDisplayListHead++, coin_seg3_dl_red_22_5  ); break;
         case 2: gSPDisplayList(gDisplayListHead++, coin_seg3_dl_red_45    ); break;

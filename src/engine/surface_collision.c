@@ -460,6 +460,7 @@ static struct Surface *find_floor_from_list(struct SurfaceNode *surfaceNode, s32
 
         // Exclude all floors above the point.
         if (bufferY < surf->lowerY) continue;
+        if (gMarioState->marioObj == gCurrentObject && surf->type == SURFACE_VANISH_CAP_WALLS) continue;
         // Check that the point is within the triangle bounds.
         if (!check_within_floor_triangle_bounds(x, z, surf)) continue;
 
