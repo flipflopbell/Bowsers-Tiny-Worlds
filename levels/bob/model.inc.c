@@ -26141,6 +26141,20 @@ Gfx bob_dl__Skull_Visual_mesh_layer_6_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
+Vtx bob_dl__Skull_Visual_mesh_layer_6_vtx_1[4] = {
+	{{ {16000, -4000, -16000}, 0, {6128, -4112}, {47, 88, 88, 255} }},
+	{{ {-16000, -4000, -16000}, 0, {-4112, -4112}, {48, 55, 88, 255} }},
+	{{ {-16000, -4000, 16000}, 0, {-4112, 6128}, {64, 83, 88, 255} }},
+	{{ {16000, -4000, 16000}, 0, {6128, 6128}, {61, 68, 88, 255} }},
+};
+
+Gfx bob_dl__Skull_Visual_mesh_layer_6_tri_1[] = {
+	gsSPVertex(bob_dl__Skull_Visual_mesh_layer_6_vtx_1 + 0, 4, 0),
+	gsSP1Triangle(0, 1, 2, 0),
+	gsSP1Triangle(0, 2, 3, 0),
+	gsSPEndDisplayList(),
+};
+
 Vtx bob_dl__Skull_Visual_mesh_layer_5_vtx_0[13] = {
 	{{ {-8329, -738, 6426}, 0, {87, -10}, {68, 77, 88, 255} }},
 	{{ {-8259, -730, 6439}, 0, {-16, -10}, {68, 77, 88, 255} }},
@@ -26173,10 +26187,10 @@ Gfx bob_dl__Skull_Visual_mesh_layer_5_tri_0[] = {
 };
 
 Vtx bob_dl__Skull_Visual_mesh_layer_5_vtx_1[4] = {
-	{{ {16000, -4000, -16000}, 0, {6128, -4112}, {47, 88, 88, 255} }},
-	{{ {-16000, -4000, -16000}, 0, {-4112, -4112}, {48, 55, 88, 255} }},
-	{{ {-16000, -4000, 16000}, 0, {-4112, 6128}, {64, 83, 88, 255} }},
-	{{ {16000, -4000, 16000}, 0, {6128, 6128}, {61, 68, 88, 255} }},
+	{{ {16000, -4000, -16000}, 0, {3056, -2064}, {0, 127, 0, 255} }},
+	{{ {-16000, -4000, -16000}, 0, {-2064, -2064}, {0, 127, 0, 255} }},
+	{{ {-16000, -4000, 16000}, 0, {-2064, 3056}, {0, 127, 0, 255} }},
+	{{ {16000, -4000, 16000}, 0, {3056, 3056}, {0, 127, 0, 255} }},
 };
 
 Gfx bob_dl__Skull_Visual_mesh_layer_5_tri_1[] = {
@@ -34480,17 +34494,18 @@ Gfx mat_revert_bob_dl_fence[] = {
 
 Gfx mat_bob_dl_water_2[] = {
 	gsDPPipeSync(),
-	gsDPSetCombineLERP(1, TEXEL0, PRIMITIVE_ALPHA, 0, 0, 0, 0, 0, COMBINED, TEXEL0, PRIMITIVE, 1, TEXEL1, TEXEL0, PRIMITIVE, 0),
+	gsDPSetCombineLERP(1, TEXEL0, PRIMITIVE_ALPHA, 0, 1, TEXEL0, PRIMITIVE, ENVIRONMENT, COMBINED, TEXEL0, PRIMITIVE, 1, COMBINED, TEXEL0, PRIMITIVE, 1),
 	gsSPClearGeometryMode(G_LIGHTING),
 	gsDPSetCycleType(G_CYC_2CYCLE),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetPrimColor(0, 0, 39, 39, 39, 255),
+	gsDPSetEnvColor(255, 255, 255, 51),
 	gsDPSetTextureImage(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 1, bob_dl_fancywater3_ia8),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b_LOAD_BLOCK, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadBlock(7, 0, 0, 2047, 256),
 	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
 	gsDPSetTileSize(0, 0, 0, 252, 252),
-	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 1, 0, G_TX_WRAP | G_TX_MIRROR, 6, 0, G_TX_WRAP | G_TX_MIRROR, 6, 0),
+	gsDPSetTile(G_IM_FMT_IA, G_IM_SIZ_8b, 8, 0, 1, 0, G_TX_WRAP | G_TX_MIRROR, 6, 1, G_TX_WRAP | G_TX_MIRROR, 6, 1),
 	gsDPSetTileSize(1, 82, 102, 252, 252),
 	gsSPEndDisplayList(),
 };
@@ -34527,6 +34542,14 @@ Gfx mat_bob_dl_minecart_wood[] = {
 	gsDPLoadBlock(7, 0, 0, 1023, 256),
 	gsDPSetTile(G_IM_FMT_RGBA, G_IM_SIZ_16b, 8, 0, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0, G_TX_WRAP | G_TX_NOMIRROR, 5, 0),
 	gsDPSetTileSize(0, 0, 0, 124, 124),
+	gsSPEndDisplayList(),
+};
+
+Gfx mat_bob_dl_water_bottom[] = {
+	gsDPPipeSync(),
+	gsDPSetCombineLERP(0, 0, 0, ENVIRONMENT, 0, 0, 0, ENVIRONMENT, 0, 0, 0, ENVIRONMENT, 0, 0, 0, ENVIRONMENT),
+	gsSPTexture(65535, 65535, 0, 0, 1),
+	gsDPSetEnvColor(54, 56, 124, 26),
 	gsSPEndDisplayList(),
 };
 
@@ -34855,6 +34878,9 @@ Gfx bob_dl__Skull_Visual_mesh_layer_6[] = {
 	gsSPDisplayList(mat_bob_dl_rails),
 	gsSPDisplayList(bob_dl__Skull_Visual_mesh_layer_6_tri_0),
 	gsSPDisplayList(mat_revert_bob_dl_rails),
+	gsSPDisplayList(mat_bob_dl_water_2),
+	gsSPDisplayList(bob_dl__Skull_Visual_mesh_layer_6_tri_1),
+	gsSPDisplayList(mat_revert_bob_dl_water_2),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),
@@ -34869,9 +34895,8 @@ Gfx bob_dl__Skull_Visual_mesh_layer_5[] = {
 	gsSPDisplayList(mat_bob_dl_fence),
 	gsSPDisplayList(bob_dl__Skull_Visual_mesh_layer_5_tri_0),
 	gsSPDisplayList(mat_revert_bob_dl_fence),
-	gsSPDisplayList(mat_bob_dl_water_2),
+	gsSPDisplayList(mat_bob_dl_water_bottom),
 	gsSPDisplayList(bob_dl__Skull_Visual_mesh_layer_5_tri_1),
-	gsSPDisplayList(mat_revert_bob_dl_water_2),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),

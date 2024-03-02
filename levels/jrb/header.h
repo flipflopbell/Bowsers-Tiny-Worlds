@@ -68,4 +68,6 @@ extern const LevelScript level_jrb_entry[];
 
 #include "levels/jrb/Custom_Skybox_Snow/geo_header.h"
 
+#include "levels/jrb/Custom_Skybox_SnowNight/geo_header.h"
+
 #endif

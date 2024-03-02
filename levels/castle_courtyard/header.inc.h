@@ -6,6 +6,6 @@ extern u8 castle_courtyard_dl_RMGP01_f2886623_14_mip1_i4[];
 extern u8 castle_courtyard_dl_cs_lawn06_alb_rgba16[];
 extern Vtx castle_courtyard_dl__Hub__001_mesh_layer_1_vtx_0[4];
 extern Gfx castle_courtyard_dl__Hub__001_mesh_layer_1_tri_0[];
-extern Gfx mat_castle_courtyard_dl_grass[];
-extern Gfx mat_revert_castle_courtyard_dl_grass[];
+extern Gfx mat_castle_courtyard_dl_grass_layer1[];
+extern Gfx mat_revert_castle_courtyard_dl_grass_layer1[];
 extern Gfx castle_courtyard_dl__Hub__001_mesh_layer_1[];

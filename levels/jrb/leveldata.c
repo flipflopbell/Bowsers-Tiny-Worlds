@@ -43,3 +43,4 @@
 #include "levels/jrb/leveldata.inc.c"
 
 #include "levels/jrb/Custom_Skybox_Snow/model.inc.c"
+#include "levels/jrb/Custom_Skybox_SnowNight/model.inc.c"

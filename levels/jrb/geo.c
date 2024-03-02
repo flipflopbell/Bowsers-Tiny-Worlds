@@ -25,3 +25,4 @@
 #include "levels/jrb/geo.inc.c"
 
 #include "levels/jrb/Custom_Skybox_Snow/geo.inc.c"
+#include "levels/jrb/Custom_Skybox_SnowNight/geo.inc.c"

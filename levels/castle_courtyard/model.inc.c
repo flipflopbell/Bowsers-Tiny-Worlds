@@ -534,11 +534,12 @@ Gfx castle_courtyard_dl__Hub__001_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_castle_courtyard_dl_grass[] = {
+Gfx mat_castle_courtyard_dl_grass_layer1[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, TEXEL1, 0, ENVIRONMENT, 0, SHADE, 0, COMBINED, 0, SHADE, 0, ENVIRONMENT, 0, SHADE, 0),
 	gsSPClearGeometryMode(G_LIGHTING),
 	gsDPSetCycleType(G_CYC_2CYCLE),
+	gsDPSetRenderMode(G_RM_PASS, G_RM_AA_ZB_OPA_SURF2),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureImage(G_IM_FMT_I, G_IM_SIZ_16b, 1, castle_courtyard_dl_RMGP01_f2886623_14_mip1_i4),
 	gsDPSetTile(G_IM_FMT_I, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
@@ -553,17 +554,18 @@ Gfx mat_castle_courtyard_dl_grass[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_castle_courtyard_dl_grass[] = {
+Gfx mat_revert_castle_courtyard_dl_grass_layer1[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsDPSetCycleType(G_CYC_1CYCLE),
+	gsDPSetRenderMode(G_RM_AA_ZB_OPA_SURF, G_RM_AA_ZB_OPA_SURF2),
 	gsSPEndDisplayList(),
 };
 
 Gfx castle_courtyard_dl__Hub__001_mesh_layer_1[] = {
-	gsSPDisplayList(mat_castle_courtyard_dl_grass),
+	gsSPDisplayList(mat_castle_courtyard_dl_grass_layer1),
 	gsSPDisplayList(castle_courtyard_dl__Hub__001_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_castle_courtyard_dl_grass),
+	gsSPDisplayList(mat_revert_castle_courtyard_dl_grass_layer1),
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),

@@ -1,14 +1,14 @@
-void scroll_bob_dl__Skull_Visual_mesh_layer_5_vtx_1() {
+void scroll_bob_dl__Skull_Visual_mesh_layer_6_vtx_1() {
 	int i = 0;
 	int count = 4;
-	int width = 128 * 0x20;
-	int height = 128 * 0x20;
+	int width = 256 * 0x20;
+	int height = 256 * 0x20;
 
 	static int currentX = 0;
 	int deltaX;
 	static int currentY = 0;
 	int deltaY;
-	Vtx *vertices = segmented_to_virtual(bob_dl__Skull_Visual_mesh_layer_5_vtx_1);
+	Vtx *vertices = segmented_to_virtual(bob_dl__Skull_Visual_mesh_layer_6_vtx_1);
 
 	deltaX = (int)(0.05000000074505806 * 0x20) % width;
 	deltaY = (int)(0.05000000074505806 * 0x20) % height;
@@ -30,10 +30,8 @@ void scroll_bob_dl__Skull_Visual_mesh_layer_5_vtx_1() {
 void scroll_gfx_mat_bob_dl_water_2() {
 	Gfx *mat = segmented_to_virtual(mat_bob_dl_water_2);
 
-
-	shift_t(mat, 10, PACK_TILESIZE(0, 1));
-	shift_s(mat, 12, PACK_TILESIZE(0, 1));
-	shift_t_down(mat, 12, PACK_TILESIZE(0, 1));
+	shift_s(mat, 13, PACK_TILESIZE(0, 1));
+	shift_t_down(mat, 13, PACK_TILESIZE(0, 1));
 
 };
 
@@ -60,7 +58,7 @@ void scroll_gfx_mat_bob_dl_fancy_cloud_layer1() {
 };
 
 void scroll_bob() {
-	scroll_bob_dl__Skull_Visual_mesh_layer_5_vtx_1();
+	scroll_bob_dl__Skull_Visual_mesh_layer_6_vtx_1();
 	scroll_gfx_mat_bob_dl_water_2();
 	scroll_gfx_mat_bob_dl_lava_2();
 	scroll_gfx_mat_bob_dl_fancy_cloud_layer1();

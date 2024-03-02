@@ -141,6 +141,7 @@
 #define MODEL_JRB_FALLING_PILLAR_BASE             0x3E        // jrb_geo_000918
 #define MODEL_JRB_FLOATING_PLATFORM               0x3F        // jrb_geo_000948
 #define MODEL_SNOW_SKYBOX                         0x40
+#define MODEL_SNOW_NIGHT_SKYBOX                   0x41
 
 // thi
 #define MODEL_THI_HUGE_ISLAND_TOP                 0x36        // thi_geo_0005B0
